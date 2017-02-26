@@ -106,7 +106,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public List<Person> findAll() {
-        Sort sort = new Sort(Sort.Direction.ASC, "creationDate");
+        Sort sort = new Sort(Sort.Direction.DESC, "creationDate");
         return repository.findAll(sort);
     }
 }
